@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  $("")
   //purpose: Creating a 10 x 10 grid using for loops to append columns to a row.
   //signature: take html elements of <tr> and <td> and loops to 10 to ultimately create a 10 x 10 grid.
   //example: function gameGrid() ----> 10 rows and columns in html file.
@@ -14,11 +13,15 @@ $(document).ready(function() {
           // <td id="fakeID"></td>
           // "1" + 2 + 3
           $("tr").last().append('<td id="' + trIndex + tdIndex + '"></td>');
-          //
-          $("td").addClass("field") ;
         }
     }
   };
   //calling gameGrid();
   gameGrid();
+  //crating a function that allows us to click on a field
+  $("td").on("click", function(){
+    //so thatwhen we click on a field it changes color
+    $(this).addClass("hitColor");
+  });
+
 });//end of doc ready function
