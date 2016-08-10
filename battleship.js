@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  var torpedosLeft = 25
+
   //purpose: Creating a 10 x 10 grid using for loops to append columns to a row.
   //signature: take html elements of <tr> and <td> and loops to 10 to ultimately create a 10 x 10 grid.
   //example: function gameGrid() ----> 10 rows and columns in html file.
@@ -22,6 +24,11 @@ $(document).ready(function() {
   $("td").on("click", function(){
     //so thatwhen we click on a field it changes color
     $(this).addClass("hitColor");
+
+      torpedosLeft = torpedosLeft - 1;
+
+        $("h4").text("Torpedos Left = " + torpedosLeft)
+
   });
 
 });//end of doc ready function
