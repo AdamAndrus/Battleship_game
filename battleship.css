@@ -6,6 +6,22 @@ table{
   background: lightblue;
   border-color: black;
 }
+#hits{
+  color: white;
+}
+
+#left{
+  color: white;
+}
+
+#winMessage{
+  color:white;
+}
+
+#loseMessage{
+  color:white;
+}
+
 .missColor {
   background: darkblue;
 }
@@ -15,12 +31,26 @@ table{
 }
 
 .shipReveal {
-  background-color: yellow;
+  background-color: red;
+}
+
+#gridButton {
+  display: flex;
+  justify-content: center;
 }
 
 body {
-  background-color: lightgrey;
+  background-color: #384252;
+}
 
+a:hover {
+  color: lightblue; 
+}
+
+#gitHub{
+  color:white;
+  display: flex;
+  justify-content: center;
 }
 /* the field class represents the column of squares in the grid*/
 
